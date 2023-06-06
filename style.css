@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 /* Navbar CSS */
 .navbar-brand {
@@ -22,7 +28,7 @@
   line-height: 24px;
 }
 
-.nav-item:nth-child(1) > .nav-link{
+.nav-item:nth-child(1)>.nav-link {
   color: #0085FF !important;
 }
 
@@ -41,6 +47,290 @@
 
 @media screen and (max-width: 1000px) {
   .navbar-brand {
-    margin-right: 4em;
+    margin-right: 2em;
   }
+}
+
+
+/* Landing page part */
+.Landing-section-container {
+  width: 100vw;
+
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+
+}
+
+.Landing-section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%
+}
+
+.Landing-left-part {
+  width: 40%;
+}
+
+.Landing-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #034D82;
+}
+
+.Landing-sub-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #90A3B4;
+  padding-top: 1em;
+}
+
+.input-controls {
+  position: relative;
+  width: 350px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 22px rgba(218, 218, 218, 0.25);
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+
+.input-controls input {
+  background: #FFFFFF;
+  box-shadow: 0px 15px 22px rgba(218, 218, 218, 0.25);
+  border-radius: 15px;
+  height: 2rem;
+  width: 370px;
+  outline: none;
+  border: none;
+}
+
+.input-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #0085FF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 2px 20px;
+}
+
+.Landing-right-part {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Gradient-circle {
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  background-color: #0085FF;
+  filter: blur(5em);
+  position: absolute;
+  bottom: 180px;
+  right: 250px;
+}
+
+.Landing-image {
+  z-index: 10;
+  transform: scale(0.7);
+}
+
+.Landing-review {
+  position: relative;
+  width: 10rem;
+  height: 50px;
+  left: -500px;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 6px 9px 29px rgba(201, 201, 201, 0.25);
+  border-radius: 10px;
+}
+
+.Landing-stars {
+  position: relative;
+  width: 3cm;
+}
+
+.Landing-star-1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: scale(.5);
+}
+
+.Landing-star-2 {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  transform: scale(.5);
+}
+
+.Landing-star-3 {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  transform: scale(.5);
+}
+
+.Landing-review-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Landing-review-number {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Landing-review-trust {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.Landing-countries-container {
+  height: 9rem;
+  min-width: 15rem;
+  background-color: greenyellow;
+  position: relative;
+  bottom: -400px;
+  left: -300px;
+  z-index: 20;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 6px 9px 29px rgba(201, 201, 201, 0.25);
+  border-radius: 20px;
+}
+
+.Landing-country-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 27px;
+  color: #333535;
+}
+
+.Landing-country-subheading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6C6C6C;
+}
+
+.Landing-country-flags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flags-icons {
+  transform: scale(0.7);
+}
+
+@media screen and (max-width: 1066px) {
+  .Landing-section-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Landing-left-part {
+    width: 80%;
+  }
+
+  .Landing-right-part {
+    width: 60%;
+    margin-left: 5rem;
+  }
+
+  .Landing-review {
+    display: none;
+  }
+
+  .Landing-image {
+    z-index: 10;
+    transform: scale(0.5);
+  }
+
+  .Landing-review {
+    left: -350px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 6px 9px 29px rgba(201, 201, 201, 0.25);
+    border-radius: 10px;
+  }
+}
+
+
+/* General stats styles */
+.Stats-container {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.Stats-content {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.Stats-content div {
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.Stats-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #0085FF;
+}
+
+.Stats-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252B42;
+
 }
